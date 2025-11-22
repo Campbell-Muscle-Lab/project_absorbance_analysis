@@ -1,6 +1,6 @@
 title: Absorbance Analysis
 description: A simple GUI to analyze absorbance based plate reader assays
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 url: https://www.campbellmusclelab.org
 
