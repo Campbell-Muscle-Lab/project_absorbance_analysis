@@ -34,11 +34,11 @@ Click the URL tab shown in the red rectangle.
 
 The URL of the Absorbance Analysis repo is :
 ```
-https://github.com/Campbell-Muscle-Lab/Absorbance Analysis.git
+https://github.com/Campbell-Muscle-Lab/project_absorbance_analysis.git
 ```
 
 Enter the URL in the textbox shown in the red rectangle. Select the location you would like to store the cloned repository.
 
-<a href="media/myofibril_profiler_repo.png" target="_blank">![Absorbance Analysis repo](media/myofibril_profiler_repo.png)</a>
+<a href="media/absorbance_analysis.png" target="_blank">![Absorbance Analysis repo](media/absorbance_analysis.png)</a>
 
 Absorbance Analysis repo is successfully cloned to your computer.
