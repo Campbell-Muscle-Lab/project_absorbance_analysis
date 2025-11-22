@@ -5,7 +5,7 @@ has_children: True
 layout: page
 ---
 
-# Installation
+# **Installation**
 {:.no_toc}
 
 * TOC
