@@ -1,0 +1,128 @@
+{"0": {
+    "doc": "Cloning Absorbance Analysis repository",
+    "title": "Installation",
+    "content": " ",
+    "url": "/pages/installation/cloning_absorbance_analysis/cloning_absorbance_analysis.html#installation",
+    
+    "relUrl": "/pages/installation/cloning_absorbance_analysis/cloning_absorbance_analysis.html#installation"
+  },"1": {
+    "doc": "Cloning Absorbance Analysis repository",
+    "title": "Cloning Absorbance Analysis Repository",
+    "content": "This page instructs you on how to clone the Absorbance Analysis repository. We recommend cloning the Absorbance Analysis repository using the GitHub Desktop client. Clicking on any of the images on this page will open a larger version in a new browser window. Open GitHub Desktop and click the dropdown menu for repositories (shown in red rectangle in the below image). Click the “Add” dropdown menu (shown in red rectangle in the below image). Click the “Clone repository…” button (shown in red rectangle in the below image). Click the URL tab shown in the red rectangle. The URL of the Absorbance Analysis repo is : . https://github.com/Campbell-Muscle-Lab/Absorbance Analysis.git . Enter the URL in the textbox shown in the red rectangle. Select the location you would like to store the cloned repository. Absorbance Analysis repo is successfully cloned to your computer. ",
+    "url": "/pages/installation/cloning_absorbance_analysis/cloning_absorbance_analysis.html#cloning-absorbance-analysis-repository",
+    
+    "relUrl": "/pages/installation/cloning_absorbance_analysis/cloning_absorbance_analysis.html#cloning-absorbance-analysis-repository"
+  },"2": {
+    "doc": "Cloning Absorbance Analysis repository",
+    "title": "Cloning Absorbance Analysis repository",
+    "content": " ",
+    "url": "/pages/installation/cloning_absorbance_analysis/cloning_absorbance_analysis.html",
+    
+    "relUrl": "/pages/installation/cloning_absorbance_analysis/cloning_absorbance_analysis.html"
+  },"3": {
+    "doc": "Help",
+    "title": "Help",
+    "content": "If you encounter problems, we recommend the following strategies: . | Take a step back, and make sure to thoroughly go over the tutorial. | If that doesn’t work, submit an issue. | If you don’t hear back in 3 days, . | email Utku Gulbulak for interface related questions. | email Melissa E. Jauquet and Jeremy P. Wood for assay related questions. | . | . ",
+    "url": "/pages/help/help.html",
+    
+    "relUrl": "/pages/help/help.html"
+  },"4": {
+    "doc": "Absorbance Analysis",
+    "title": "Absorbance Analysis",
+    "content": "This is a simple user interface to analyze absorbance based plate reader assays. Interface is developed by Utku Gulbulak, Melissa E. Jauquet, and Jeremy P. Wood. ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"5": {
+    "doc": "Installation",
+    "title": "Installation",
+    "content": "Users can use Absorbance Analysis either through MATLAB or as a stand alone application. The installation files for both approaches can be downloaded or obtained by cloning the GitHub repository. ",
+    "url": "/pages/installation/installation.html",
+    
+    "relUrl": "/pages/installation/installation.html"
+  },"6": {
+    "doc": "Instructions for MATLAB App Installation",
+    "title": "Installation",
+    "content": " ",
+    "url": "/pages/installation/installing_matlab_app/installing_matlab_app.html#installation",
+    
+    "relUrl": "/pages/installation/installing_matlab_app/installing_matlab_app.html#installation"
+  },"7": {
+    "doc": "Instructions for MATLAB App Installation",
+    "title": "Instructions for MATLAB App Installation",
+    "content": "This page instructs you on how to install Absorbance Analysis as a MATLAB App. | The MATLAB App installer file can be downloaded from the GitHub page. 22Nov25 installer is the current Absorbance Analysis build. In this case, the installer file is located under your designated Downloads folder. | Users can also clone the Absorbance Analysis repository and access the MATLAB App installer file. The installer file is located under &lt;repo&gt;app\\22Nov25. The instructions on how to clone a repository can be found here. | . Locate Absorbance Analysis.mlappinstall file on your computer. Double-click the Absorbance Analysis.mlappinstall and the file will include Absorbance Analysis in your MATLAB Applications. Click Install when the below prompt appears. After a couple of seconds, go to the Apps tab on the top menu of your MATLAB, shown in red rectangle. You can find the Absorbance Analysis application under the My Apps section, shown in red rectangle. Now Absorbance Analysis is ready to be used. ",
+    "url": "/pages/installation/installing_matlab_app/installing_matlab_app.html",
+    
+    "relUrl": "/pages/installation/installing_matlab_app/installing_matlab_app.html"
+  },"8": {
+    "doc": "Instructions for Stand Alone Application Installation",
+    "title": "Installation",
+    "content": " ",
+    "url": "/pages/installation/installing_stand_alone_application/installing_stand_alone_application.html#installation",
+    
+    "relUrl": "/pages/installation/installing_stand_alone_application/installing_stand_alone_application.html#installation"
+  },"9": {
+    "doc": "Instructions for Stand Alone Application Installation",
+    "title": "Instructions for Stand Alone Application Installation",
+    "content": "This page instructs you on how to install MyofibrilProfiler as a stand-alone application. | The installer file can be downloaded from the GitHub page. 19Nov25 installer is the current MyofibrilProfiler build. In this case, the installer file is located under your designated Downloads folder. | Users can also clone the MyofibrilProfiler repository and access the zipped installer file. The installer file is located under &lt;repo&gt;bin\\19Nov25. The instructions on how to clone a repository can be found here. | . Locate the installer file on your computer and unzip it. Once the installer is unzipped, double-click the MyofibrilProfiler.exe file. The installer starts in a few seconds and then click Next. The installer asks users to select the installation folder and then click Next. In the next step, the installer asks the folder for the MATLAB Runtime. The MATLAB Runtime will be automatically downloaded from the internet in the later steps. Click Next to continue. MATLAB Runtime License agreement is needed for the runtime installation, click Yes for the license agreement and Next to continue. MATLAB Runtime is ready to be downloaded. Click Next to proceed. The download may take some time depending on the internet connection. Once the download is completed, press Close. Now MyofibrilProfiler is ready to be used. ",
+    "url": "/pages/installation/installing_stand_alone_application/installing_stand_alone_application.html",
+    
+    "relUrl": "/pages/installation/installing_stand_alone_application/installing_stand_alone_application.html"
+  },"10": {
+    "doc": "Tutorial",
+    "title": "Tutorial",
+    "content": "This tutorial provides simple instructions on performing a new analysis. Clicking on any of the images on this page will open a larger version in a new browser window. ",
+    "url": "/pages/tutorial/tutorial.html",
+    
+    "relUrl": "/pages/tutorial/tutorial.html"
+  },"11": {
+    "doc": "Tutorial",
+    "title": "Getting started",
+    "content": ". | Using the Absorbance Analysis through MATLAB: . | Launch MATLAB and navigate to the Apps tab on the top menu. Find the Absorbance Analysis under My Apps and start the application by clicking it. The instructions on how to locate the Apps tab can be found here. | . | Using the Absorbance Analysis as a stand-alone application: . | Locate your Absorbance Analysis.exe shortcut and start the application by double-clicking it. | . | . After a few seconds, you should see the program window, given below. ",
+    "url": "/pages/tutorial/tutorial.html#getting-started",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#getting-started"
+  },"12": {
+    "doc": "Tutorial",
+    "title": "User panels",
+    "content": "The interface is divided into 2 panels: . | Raw Data: The loaded raw data is shown in this panel. The data normalized with respect to the Control is also displayed. | Analysis: The locations of interest on the trace are highlighted here. | Users can change their thresholds within this panel. | . | . ",
+    "url": "/pages/tutorial/tutorial.html#user-panels",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#user-panels"
+  },"13": {
+    "doc": "Tutorial",
+    "title": "Loading data",
+    "content": "Users start their analysis by loading their data spreadsheets. The interface specifically looking for .XLSX files. Click on the Load File option, shown in red rectangle. The Load File option opens the below file dialog. The dialog automatically looks for the .XLSX files. Navigate to your folder with the data files and click Open. ",
+    "url": "/pages/tutorial/tutorial.html#loading-data",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#loading-data"
+  },"14": {
+    "doc": "Tutorial",
+    "title": "Data visualization",
+    "content": "The data file is immediately loaded into the interface and raw traces are displayed. In addition, all the traces are normalized with respect to the experimental Controls following remapping on unit scales. ",
+    "url": "/pages/tutorial/tutorial.html#data-visualization",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#data-visualization"
+  },"15": {
+    "doc": "Tutorial",
+    "title": "Data analysis",
+    "content": "The analysis is automated and can be done with minimal input from the user. The analysis display is updated as soon as the data file is loaded, highlighted in red rectangle. The interface marked multiple points of interests on the normalized traces. The following is listed with respect to their occurrence during the experiment. | Relative clot formation onset is marked with a circle, the one with the lower relative density. The point at which the density value reached 90% of the maximum density is used to calculate the rate at which clots form. This point is also shown with a circle. The rate is calculated from the fitted line shown in dashed lines. | Maximum optical density is shown with upward triangle. | Relative lysine onset is marked with a square at which the density value is 90% of the maximum value. The lysine rate is calculated by fitting a line from the 90% point up to the zero-point. The rate is measured from the fitted line shown in dashed lines. | . ",
+    "url": "/pages/tutorial/tutorial.html#data-analysis",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#data-analysis"
+  },"16": {
+    "doc": "Tutorial",
+    "title": "Analysis options",
+    "content": "Users can change the default threshold values for their analysis using the options shown in the below red rectangle. Please keep in mind that the Relative Lysine Onset Threshold value is shared to calculate the rate of clotting. Clot formation onset . Please, note that the onset markers are shifted up. Lysine onset . Please, note that the onset markers are shifted down. ",
+    "url": "/pages/tutorial/tutorial.html#analysis-options",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#analysis-options"
+  },"17": {
+    "doc": "Tutorial",
+    "title": "Export analysis",
+    "content": "Once users are done with their analysis, they can export the analysis into their host computers. A summary Excel sheet is saved. Export Analysis option is accessed through the top menu, shown in the red rectangle. Once it is clicked, it opens a file dialog. Navigate to the folder that you want to use. The exported Excel file summarizes all the calculated values. Here are the brief descriptions of each column: . | ninety_percent_max_OD: 90% of the maximum density value. | ninety_percent_max_OD: Time at which the density value reaches the 90% of the maximum. | upward_slope_start_time: Clot formation onset. | upward_slope_end_time: End point for clot formation rate. | upward_slope: Clot formation rate. | downward_slope_start_time: Lysine onset. | downward_slope_end_time: Lysine trajectory end point. | downward_slope: Lysine rate. | reach_bottom_time: Elapsed time for trace to pass zero line. | bottom_OD: The density value of the point where the trace crossed zero line. | area_under_the_curve: Area under the absorbance curve. | . ",
+    "url": "/pages/tutorial/tutorial.html#export-analysis",
+    
+    "relUrl": "/pages/tutorial/tutorial.html#export-analysis"
+  }
+}
