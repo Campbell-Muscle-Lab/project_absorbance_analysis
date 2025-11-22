@@ -12,10 +12,10 @@ This tutorial provides simple instructions on performing a new analysis. Clickin
 ## Getting started
 
 + Using the Absorbance Analysis through MATLAB:
-    - Launch MATLAB and navigate to the Apps tab on the top menu. Find the Absorbance Analysis under My Apps and start the application by clicking it. The instructions on how to locate the Apps tab can be found [here](../../installation/installing_matlab_app/installing_matlab_app.html).
+    - Launch MATLAB and navigate to the Apps tab on the top menu. Find the Absorbance Analysis under My Apps and start the application by clicking it. The instructions on how to locate the Apps tab can be found [here](../installation/installing_matlab_app/installing_matlab_app.html).
 
 + Using the Absorbance Analysis as a stand-alone application:
-    - Locate your `Absorbance Analysis.exe` shortcut and start the application by double-clicking it.
+    - Locate your `AbsorbanceAnalysis.exe` shortcut and start the application by double-clicking it.
 
 After a few seconds, you should see the program window, given below. 
 
