@@ -91,7 +91,7 @@ classdef absorbance_analysis_git_track < matlab.apps.AppBase
                 deriv_ix = find(diff_cond<deriv_threshold,1,'first')-1;
 
                 lysine_onset = find(cond>max_od*lysine_onset_threshold,1,'last');
-                lysine_cess = max_ix + find(cond(max_ix+1:end)<=0,1,'first');
+                lysine_cess = max_ix + find(cond(max_ix+1:end)<=cond(1),1,'first');
                 if isempty(lysine_cess) 
                     lysine_cess = numel(cond);
                 end
@@ -103,12 +103,17 @@ classdef absorbance_analysis_git_track < matlab.apps.AppBase
                 clot_onset = find(cond>max_od*clot_formation_threshold,1,'first');
                 clot_cess = find(cond>max_od*lysine_onset_threshold,1,'first');
 
-                lysine_trajectory = fit_linear_model(time(lysine_onset:lysine_cess)',cond(lysine_onset:lysine_cess));
+                try
+                    err_flag = 0;
+                    lysine_trajectory = fit_linear_model(time(lysine_onset:lysine_cess)',cond(lysine_onset:lysine_cess));
 
-                clot_trajectory = fit_linear_model(time(clot_onset:clot_cess)',cond(clot_onset:clot_cess));
+                    clot_trajectory = fit_linear_model(time(clot_onset:clot_cess)',cond(clot_onset:clot_cess));
 
-                area_under_the_curve = simps(time(1:lysine_cess),cond(1:lysine_cess));
-                
+                    area_under_the_curve = simps(time(1:lysine_cess),cond(1:lysine_cess));
+
+                catch
+                    err_flag = 1;
+                end
                 
                 hold(app.AnalysisAxes,'on')
                 p(i) = plot(app.AnalysisAxes,time,cond,'color',col_map(i,:),'LineWidth',1.7);
@@ -144,29 +149,29 @@ classdef absorbance_analysis_git_track < matlab.apps.AppBase
                     ':','color',marker_col_map(i,:), ...
                     'LineWidth',1.7)
 
-
-                app.analysis.out(sheet_no).condition(i,1) = conditions(i);
-                app.analysis.out(sheet_no).ninety_percent_max_OD(i,1) = cond(lysine_onset);
-                app.analysis.out(sheet_no).ninety_percent_max_OD_time(i,1) = time(lysine_onset);
-                app.analysis.out(sheet_no).upward_slope_start_time(i,1) = time(clot_onset);
-                app.analysis.out(sheet_no).upward_slope_end_time(i,1) = time(clot_cess);
-                app.analysis.out(sheet_no).upward_slope(i,1) = clot_trajectory.slope;
-                app.analysis.out(sheet_no).downward_slope_start_time(i,1) = time(lysine_onset);
-                app.analysis.out(sheet_no).downward_slope_end_time(i,1) = time(lysine_cess);
-                app.analysis.out(sheet_no).downward_slope(i,1) = lysine_trajectory.slope;
-                app.analysis.out(sheet_no).reach_bottom_time(i,1) = time(lysine_cess);
-                app.analysis.out(sheet_no).bottom_OD(i,1) = cond(lysine_cess);
-                app.analysis.out(sheet_no).area_under_the_curve(i,1) = area_under_the_curve;
+                if ~err_flag
+                    app.analysis.out(sheet_no).condition(i,1) = conditions(i);
+                    app.analysis.out(sheet_no).ninety_percent_max_OD(i,1) = cond(lysine_onset);
+                    app.analysis.out(sheet_no).ninety_percent_max_OD_time(i,1) = time(lysine_onset);
+                    app.analysis.out(sheet_no).upward_slope_start_time(i,1) = time(clot_onset);
+                    app.analysis.out(sheet_no).upward_slope_end_time(i,1) = time(clot_cess);
+                    app.analysis.out(sheet_no).upward_slope(i,1) = clot_trajectory.slope;
+                    app.analysis.out(sheet_no).downward_slope_start_time(i,1) = time(lysine_onset);
+                    app.analysis.out(sheet_no).downward_slope_end_time(i,1) = time(lysine_cess);
+                    app.analysis.out(sheet_no).downward_slope(i,1) = lysine_trajectory.slope;
+                    app.analysis.out(sheet_no).reach_bottom_time(i,1) = time(lysine_cess);
+                    app.analysis.out(sheet_no).bottom_OD(i,1) = cond(lysine_cess);
+                    app.analysis.out(sheet_no).area_under_the_curve(i,1) = area_under_the_curve;
+                else
+                    app.analysis.out(sheet_no).condition(i,1) = conditions(i);
+                end
 
             end
             leg_conditions = strrep(conditions,'_',' ');
             legend(p,leg_conditions, ...
                 'Location','northoutside', ...
                 'Orientation','horizontal', ...
-                'NumColumns',3)
-
-          
-            
+                'NumColumns',2,'FontSize',6)            
         end
         
         function ClearDisplays(app)
